@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Upax</string>
+    <string name="title_catalog">Catálogo</string>
+    <string name="title_detail">Detalle</string>
+    <string name="locations">Lugares</string>
+    <string name="ok">OK</string>
+    <string name="alert">Alerta</string>
+    <string name="error">"Ocurrió un error.
+%1$s"
+    </string>
+</resources>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_catalog"
+    >
+
+    <fragment
+        android:id="@+id/navigation_catalog"
+        android:name="com.test.test.ui.catalog.CatalogFragment"
+        android:label="@string/title_catalog"
+        >
+        <action
+            android:id="@+id/action_navigation_catalog_to_navigation_detail"
+            app:destination="@id/navigation_detail"
+            app:popUpTo="@string/title_catalog"
+            />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_detail"
+        android:name="com.test.test.ui.detail.DetailFragment"
+        android:label="@string/title_detail"
+        tools:layout="@layout/fragment_detail"
+        >
+        <argument
+            android:name="pokemonId"
+            app:argType="long"
+            android:defaultValue="0L"
+            />
+        <argument
+            android:name="fav"
+            app:argType="boolean"
+            android:defaultValue="false"
+            />
+    </fragment>
+
+</navigation>
