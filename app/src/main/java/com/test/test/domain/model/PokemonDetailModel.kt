@@ -41,8 +41,7 @@ class PokemonMapper(val pokemon: PokemonDetailModel)
     )
 
     fun getSpritesModel() = SpritesModel(
-        0L
-        ,pokemon.id
+         pokemon.id
         ,pokemon.sprites.back_default
         ,pokemon.sprites.back_shiny
         ,pokemon.sprites.front_default

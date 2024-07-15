@@ -30,8 +30,7 @@ data class PokemonTypeCrossRef(
 
 @Entity(tableName = "sprite")
 data class SpritesModel(
-    @PrimaryKey(autoGenerate = true) val spriteId: Long,
-    val pokemonId: Long,
+    @PrimaryKey(autoGenerate = false) val pokemonId: Long,
     val back_default: String,
     val back_shiny: String,
     val front_default: String,

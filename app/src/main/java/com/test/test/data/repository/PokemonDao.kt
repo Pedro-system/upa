@@ -20,7 +20,7 @@ interface PokemonDao {
     @Insert(onConflict = OnConflictStrategy.ABORT)
     suspend fun insertType(type: TypeXModel):Long
 
-    @Insert(onConflict = OnConflictStrategy.ABORT)
+    @Insert(onConflict = OnConflictStrategy.REPLACE)
     suspend fun insertSprite(sprites: SpritesModel):Long
 
     @Insert(onConflict = OnConflictStrategy.ABORT)
