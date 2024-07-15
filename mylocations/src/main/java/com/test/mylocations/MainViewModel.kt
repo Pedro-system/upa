@@ -18,7 +18,7 @@ import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.asExecutor
 import kotlinx.coroutines.launch
 import java.util.concurrent.TimeUnit
-import kotlin.random.Random
+
 
 const val COLLECTION_NAME = "mylocations"
 
@@ -50,10 +50,7 @@ class MainViewModel :ViewModel()
             {
                 for (location in locationResult.locations) {
                   Log.d("LOCATION", "Location: ${location.latitude}, ${location.longitude}")
-                  uploadGeo(
-                      19.304929 + Random.nextDouble(-0.02,0.02)
-                      ,-99.203578 + Random.nextDouble(-0.02,0.02)
-                  )
+                  uploadGeo( location.latitude ,location.longitude )
                 }
             }
         })
