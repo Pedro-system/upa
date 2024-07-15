@@ -57,11 +57,11 @@ elementos.
 
 Con la misma API obtener el detalle de cada pokémon y persistir al menos su id, nombre, imagen, sprite frontal por defecto, altura, peso, nombre de los tipos del pokémon.
 
-[detalle](detalle.png)
+[detalle](./readme/detalle.png)
 2.2.
 
 En una pantalla mostrar un listado vertical con el nombre y el sprite del pokémon.
-[catalogo](pantallaInicio.png)
+[catalogo](./readme/pantallaInicio.png)
 2.3.
 
 Utilizar el componente de la actividad 1 para mostrar la imagen, la inicial del nombre o el placeholder.
@@ -96,11 +96,11 @@ Agregar un botón que permita marcar/desmarcar un favorito.
 
 Agregar un módulo a la aplicación con el nombre: mylocations.
 
-[menu](menu_abbre_mapa.png)
-[permisos](solicitaPermisosParaVerUbicacion.png)
-[listado](geopunto_con_tiempo.png)
-[mapa](mapa.png)
-[console](Cloud_Firestore.png)
+[menu](./readme/menu_abbre_mapa.png)
+[permisos](./readme/solicitaPermisosParaVerUbicacion.png)
+[listado](./readme/geopunto_con_tiempo.png)
+[mapa](./readme/mapa.png)
+[console](./readme/Cloud_Firestore.png)
 
 4.1.
 
